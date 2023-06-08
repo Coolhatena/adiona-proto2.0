@@ -18,21 +18,21 @@ function Navigation() {
 
         <div className="navbar" id="navbarNav">
           <ul className="navbar_items nav">
-            <Link to="/Vuelos" className="nav-link">
+            <a href="#vuelos" className="nav-link">
               Flight
-            </Link>
-            <Link to="/Hoteles" className="nav-link">
+            </a>
+            <a href="#hoteles" className="nav-link">
               Hotels
-            </Link>
-            <Link to="/Cruceros" className="nav-link">
+            </a>
+            <a href="#cruceros" className="nav-link">
               Cruises
-            </Link>
-            <Link to="/Autos" className="nav-link">
+            </a>
+            <a href="#autos" className="nav-link">
               Car Rental
-            </Link>
-            <Link to="/Tours" className="nav-link">
+            </a>
+            <a href="#tours" className="nav-link">
               Tours
-            </Link>
+            </a>
             <Link to={account? "/Perfil" : "/Principal"} className="nav-link">
               Profile
             </Link>
@@ -41,10 +41,15 @@ function Navigation() {
         </div>
       </nav>
       <Carousel />
+	  <p id="vuelos"/>
       <Vuelos />
+	  <p id="hoteles"/>
       <Hoteles />
+	  <p id="cruceros"/>
       <Cruceros />
-      <Autos />
+	  <p id="autos"/>
+      <Autos />Carousel
+	  <p id="tours"/>
       <Tours />
     </>
   );
