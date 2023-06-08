@@ -8,40 +8,51 @@ function Cruceros() {
       </div>
       <div className="form-row">
         <div className="form-group text-start col-md-6 mb-4">
-          <label htmlFor="Nombre Pasajero" style={{color: "#A88043"}}>Destination</label>
+          <label htmlFor="Nombre Pasajero">Destination</label>
           <input
             type="text"
-            id="name_pas"
+            id="name_destination"
             className="form-control"
             placeholder="Destination"
           />
         </div>
         <div className="form-group text-start col-md-6 mb-4">
-          <label htmlFor="Port" style={{color: "#A88043"}}>Port</label>
-          <input
-            type="name"
-            id="name_pas"
-            className="form-control"
-            placeholder="Destination"
-          />
-        </div>
-        <div className="form-group text-start col-md-6 mb-4">
-          <label htmlFor="fecha" style={{color: "#A88043"}}>Arraval Date</label>
+          <label htmlFor="fecha">Departure date </label>
           <input
             type="datetime-local"
             id="date"
             className="form-control"
+            placeholder="Departure Date"
+          />
+        </div>
+       
+        <div className="form-group text-start col-md-6 mb-4">
+          <label htmlFor="password">Port Departure</label>
+          <input
+            type="text"
+            className="form-control"
+            id="port_departure"
+            placeholder="Port Departure"
           />
         </div>
       </div>
 
+      <div className="form-group text-start col-md-6 mb-4">
+        <label>Guests</label>
+        <input
+          type="number"
+          min="1"
+          max="20"
+          className="form-control"
+          id="inputAddress2"
+        />
+      </div>
       <div className="form-row text-start col-md-6 mb-4">
         <div className="form-group col-md-6 mb-4">
-          <label style={{color: "#A88043"}}>Number of days</label>
+          <label>Number of days</label>
           <select className="form-control" id="tipo" name="tipo">
-            <option value="low">1-2 Days</option>
-            <option value="media">3-4 Days</option>
-            <option value="hard">5-6 Days</option>
+            <option value="volvo">3-4 Days</option>
+            <option value="saab">5-6 Days</option>
           </select>
         </div>
       </div>

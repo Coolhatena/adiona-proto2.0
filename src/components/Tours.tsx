@@ -10,7 +10,7 @@ function Tours() {
         <div className="form-group text-start col-md-6 mb-4">
           <label htmlFor="Nombre Pasajero">Destination</label>
           <input
-            type="name"
+            type="text"
             id="name_pas"
             className="form-control"
             placeholder="Destination"
@@ -26,18 +26,18 @@ function Tours() {
           />
         </div>
         <div className="form-group text-start col-md-6 mb-4">
-          <label htmlFor="password">Departure</label>
+          <label>Departure</label>
           <input
-            type="password"
+            type="text"
             className="form-control"
-            id="password"
+            id="departureTour"
             placeholder="Departure"
           />
         </div>
       </div>
       
       <div className="form-group text-start col-md-6 mb-4">
-        <label>Number of Passenger</label>
+        <label>Number of Passengers</label>
         <input
           type="number"
           min="1"
