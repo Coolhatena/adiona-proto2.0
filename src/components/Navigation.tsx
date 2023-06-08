@@ -35,6 +35,6 @@ function Navigation (){
             <Ofertas/>
             </>
         )
-}
+    }
 
 export { Navigation };

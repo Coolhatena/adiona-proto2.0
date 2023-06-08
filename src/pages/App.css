@@ -7,9 +7,17 @@
 }
 
 .Design {
-  background: #c2e59c; 
-  background: -webkit-linear-gradient(to right, #0C3547, #3C98A3);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0C3547, #3C98A3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #c2e59c;
+  background: -webkit-linear-gradient(
+    to right,
+    #0c3547,
+    #3c98a3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0c3547,
+    #3c98a3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 50%;
   display: flex;
   align-items: center;
@@ -26,12 +34,12 @@
   color: white;
 }
 
-.Logo{
+.Logo {
   height: 60%;
   width: 90%;
 }
 
-.logo{
+.logo {
   width: 16rem;
   min-width: 10rem;
 }
@@ -51,9 +59,17 @@
 }
 
 .btn_login {
-  background: #c2e59c; 
-  background: -webkit-linear-gradient(to right, #0C3547, #3C98A3);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0C3547, #3C98A3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #c2e59c;
+  background: -webkit-linear-gradient(
+    to right,
+    #0c3547,
+    #3c98a3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0c3547,
+    #3c98a3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-size: 1.3rem;
   color: white;
   border: 0;
@@ -70,16 +86,17 @@
   transition-duration: 0.4s;
 }
 
-.sign_up, .forgot {
+.sign_up,
+.forgot {
   color: #268598;
 }
 
-.btn_create:hover{
+.btn_create:hover {
   background: #268598;
   color: white;
 }
 
-.nav-link{
+.nav-link {
   color: #268598;
   font-size: 1.4rem;
   text-align: center;
@@ -108,10 +125,10 @@
   width: 100%;
   background: #777;
   color: white;
-  position:relative;
+  position: relative;
   background-position: center;
   align-items: center;
-  background-size:cover;
+  background-size: cover;
 }
 
 .container {
@@ -133,7 +150,7 @@
   opacity: 0.5;
 }
 
-.form{
+.form {
   text-align: center;
   display: block;
   height: 60%;
@@ -141,10 +158,10 @@
   padding: 4% 10%;
 }
 
-.title h1{
-  background: linear-gradient(#0C3547, #3C98A3);
+.title h1 {
+  background: linear-gradient(#0c3547, #3c98a3);
   background-clip: text;
-  color: transparent; 
+  color: transparent;
   font-size: 4rem;
   text-align: left;
 }

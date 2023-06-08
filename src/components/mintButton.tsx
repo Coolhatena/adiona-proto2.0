@@ -1,9 +1,14 @@
 import { useAccount, useApi, useAlert } from "@gear-js/react-hooks";
 import { web3FromSource } from "@polkadot/extension-dapp";
 import { getProgramMetadata } from "@gear-js/api";
-import { Button } from "@gear-js/ui";
 
-function MintButton() {
+type Props = {
+  styleClass: string;
+  text: string;
+  tokens: number;
+};
+
+function MintButton({ styleClass, text, tokens }: Props) {
   const alert = useAlert();
   const { accounts, account } = useAccount();
   const { api } = useApi();
@@ -17,7 +22,7 @@ function MintButton() {
 
   const message: any = {
     destination: programIDFT, // programId
-    payload: { mint: 10000 },
+    payload: { mint: tokens },
     gasLimit: 899819245,
     value: 0,
   };
@@ -60,7 +65,11 @@ function MintButton() {
     }
   };
 
-  return <Button text="Mint" onClick={signer} />;
+  return (
+    <button className={styleClass} type="button" onClick={signer}>
+      {text}
+    </button>
+  );
 }
 
 export { MintButton };

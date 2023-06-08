@@ -1,6 +1,8 @@
-const webpack = require('webpack');
+const webpack = require("webpack");
 
 module.exports = (config) => {
-  config.plugins.push(new webpack.ProvidePlugin({ Buffer: ['buffer', 'Buffer'] }));
+  config.plugins.push(
+    new webpack.ProvidePlugin({ Buffer: ["buffer", "Buffer"] })
+  );
   return config;
 };
