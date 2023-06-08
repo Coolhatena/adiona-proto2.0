@@ -1,12 +1,17 @@
-import { Route, Routes } from 'react-router-dom';
-import { Home } from './home';
-
-const routes = [{ path: '/', Page: Home }];
+import { Route, Routes } from "react-router-dom";
+import './App.css';
+import Navigation from '../components/Navigation';
+import { Login } from '../components/Login';
 
 function Routing() {
-  const getRoutes = () => routes.map(({ path, Page }) => <Route key={path} path={path} element={<Page />} />);
-
-  return <Routes>{getRoutes()}</Routes>;
+  return (
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Login/>} />
+          <Route path="/Principal" element={<Navigation/>} />
+        </Routes>
+      </div>
+  );
 }
 
 export { Routing };

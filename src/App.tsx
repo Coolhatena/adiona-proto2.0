@@ -1,8 +1,11 @@
 import { useApi, useAccount } from '@gear-js/react-hooks';
 import { Routing } from 'pages';
-import { Header, Footer, ApiLoader } from 'components';
+import { Header, ApiLoader } from 'components';
 import { withProviders } from 'hocs';
-import 'App.scss';
+import { MintButton } from 'components/mintButton';
+import { Burn } from 'components/Burn';
+import { TransferButton } from 'components/Transfer';
+import { ApproveButton } from 'components/Approve';
 
 function Component() {
   const { isApiReady } = useApi();
@@ -12,9 +15,12 @@ function Component() {
 
   return (
     <>
-      <Header isAccountVisible={isAccountReady} />
-      <main>{isAppReady ? <Routing /> : <ApiLoader />}</main>
-      <Footer />
+      {/* <Header isAccountVisible={isAccountReady} /> */}
+		{isAppReady ? <Routing /> : <ApiLoader />}
+	  	{/* <MintButton/>
+		<Burn/>
+		<TransferButton/>
+		<ApproveButton/> */}
     </>
   );
 }

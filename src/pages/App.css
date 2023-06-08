@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+
+.Options {
+  text-align: left;
+}
+
+.Design {
+  background: #c2e59c; 
+  background: -webkit-linear-gradient(to right, #0C3547, #3C98A3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0C3547, #3C98A3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.Logo{
+  height: 60%;
+  width: 90%;
+}
+
+.logo{
+  height: 20%;
+  width: 20%;
+}
+
+.form-control {
+  font-size: 15px;
+}
+
+.slogan {
+  font-size: 3rem;
+  margin-top: 50%;
+}
+
+.sign_in {
+  color: white;
+  text-decoration: none;
+}
+
+.btn_login {
+  background: #c2e59c; 
+  background: -webkit-linear-gradient(to right, #0C3547, #3C98A3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0C3547, #3C98A3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 1.3rem;
+  color: white;
+  border: 0;
+  padding: 2% 15%;
+  border-radius: 8px;
+}
+
+.btn_create {
+  background: white;
+  border: 2px solid #268598;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: black;
+  transition-duration: 0.4s;
+}
+
+.sign_up, .forgot {
+  color: #268598;
+}
+
+.btn_create:hover {
+  background: #268598;
+  color: white;
+}
+
+.nav-link{
+  color: #268598;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.navbar-toggler {
+  margin: 1.5rem;
+}
+
+.carousel-item {
+  height: 32rem;
+  background: #777;
+  color: white;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+}
