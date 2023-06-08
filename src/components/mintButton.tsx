@@ -3,12 +3,12 @@ import { web3FromSource } from "@polkadot/extension-dapp";
 import { getProgramMetadata } from "@gear-js/api";
 
 type Props = {
-	styleClass: string;
-	text: string;
-	tokens: number;
-  };
+  styleClass: string;
+  text: string;
+  tokens: number;
+};
 
-function MintButton({styleClass, text, tokens}: Props) {
+function MintButton({ styleClass, text, tokens }: Props) {
   const alert = useAlert();
   const { accounts, account } = useAccount();
   const { api } = useApi();
@@ -65,8 +65,11 @@ function MintButton({styleClass, text, tokens}: Props) {
     }
   };
 
-  return <button className={styleClass} type="button" onClick={signer}>{text}</button>;
+  return (
+    <button className={styleClass} type="button" onClick={signer}>
+      {text}
+    </button>
+  );
 }
-
 
 export { MintButton };
