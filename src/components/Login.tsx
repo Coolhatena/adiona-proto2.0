@@ -18,7 +18,7 @@ export function Login() {
 										</div>
 
 										<div className="d-flex align-items-center justify-content-center mb-2  pb-4">
-											<p className="mb-0 me-3">Don&apost have an account?</p>
+											<p className="mb-0 me-3">Don&apos;t have an account?</p>
 											<a className="sign_up" href="#!">Sign up</a>
 										</div>
 										
@@ -37,7 +37,6 @@ export function Login() {
 														Sign in
 													</Link>
 												</button>
-												<MintButton/>
 											</div>
 
 											<a className="forgot" href="#!">Forgot password?</a>
