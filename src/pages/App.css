@@ -15,6 +15,17 @@
   align-items: center;
 }
 
+.Design_user {
+  background: #c2e59c; 
+  background: -webkit-linear-gradient(to right, #0C3547, #3C98A3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0C3547, #3C98A3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  display: block;
+  padding: 10%;
+  align-items: center;
+  color: white;
+}
+
 .Logo{
   height: 60%;
   width: 90%;
@@ -72,14 +83,14 @@
   color: #268598;
   font-size: 1.4rem;
   text-align: center;
-  padding-right: 1.5rem;
+  padding-right: 1rem;
 }
 
 .navbar_items {
   align-items: center;
   text-align: center;
   display: flex;
-  padding-right: 27rem;
+  padding-right: 25rem;
 }
 
 .navbar-toggler {

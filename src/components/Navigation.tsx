@@ -21,6 +21,7 @@ function Navigation (){
                         <Link to="/Cruceros" className="nav-link">Cruceros</Link>
                         <Link to="/Autos" className="nav-link">Autos</Link>
                         <Link to="/Tours" className="nav-link">Tours</Link>
+                        <Link to="/Perfil" className="nav-link">Perfil</Link>
                     </ul>
                     <Account/>
                 </div>
