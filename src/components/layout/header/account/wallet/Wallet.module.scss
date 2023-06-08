@@ -6,6 +6,15 @@
   position: relative;
 }
 
+.wallet p {
+	margin: 0;
+}
+
+.wallet button {
+	padding: 1rem;
+	width: fit-content;
+}
+
 .balance {
   margin-right: 25px;
   font-size: $fontSizeMedium;

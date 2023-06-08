@@ -6,6 +6,7 @@ import { Cruceros } from "./Cruceros";
 import { Autos } from "./Autos";
 import { Tours } from "./Tours";
 import { Ofertas } from "./Ofertas";
+import { Account } from "./layout/header/account/Account";
 
 function Navigation (){
         return(
@@ -21,12 +22,10 @@ function Navigation (){
                         <Link to="/Autos" className="nav-link">Autos</Link>
                         <Link to="/Tours" className="nav-link">Tours</Link>
                         <Link to="/Ofertas" className="nav-link">Ofertas</Link>
+                		<Account/>
                     </ul>
                 </div>
 
-                <button className="navbar-toggler" type="button" >
-                    <span className="navbar-toggler-icon"/>
-                </button>
 
                 <div className="collapse navbar-collapse " id="Options">
                     <ul className="navbar-nav">
