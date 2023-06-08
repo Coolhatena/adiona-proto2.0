@@ -1,22 +1,19 @@
-<p align="center">
-  <a href="https://gear-tech.io">
-    <img src="https://github.com/gear-tech/gear/blob/master/images/logo-grey.png" width="400" alt="GEAR">
-  </a>
-</p>
-<p align=center>
-    <a href="https://github.com/gear-tech/gear-js/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-GPL%203.0-success"></a>
-</p>
-<hr>
+# Adiona: Travel with Experience
 
-## Description
+A 100% digtal travel agency with blockchain integration
 
-React application of [_wiki link_](#) based on [Rust smart-contract](#).
+Frontend made in React/Typescript, including the power of [Gear](https://idea.gear-tech.io/programs?node=wss%3A%2F%2Frpc-node.gear-tech.io) blockchain.
 
 ## Getting started
 
 ### Install packages:
 
-```sh
+Use npm to install yarn
+```
+npm install --global yarn
+```
+Once Yarn is installed, we can build the dependencies
+```
 yarn install
 ```
 
@@ -26,10 +23,15 @@ Create `.env` file, `.env.example` will let you know what variables are expected
 
 In order for all features to work as expected, the node and it's runtime version should be chosen based on the current `@gear-js/api` version.
 
-In case of issues with the application, try to switch to another network or run your own local node and specify its address in the .env file. When applicable, make sure the smart contract(s) wasm files are uploaded and running in this network accordingly.
+To prevent issues with the application, we strongly suggest using `REACT_APP_NODE_ADDRESS=wss://rpc-node.gear-tech.io` as environment variable.
 
 ### Run the app:
 
 ```sh
 yarn start
 ```
+
+### Login:
+Email: adiona@gmail.com
+
+Password: adiona123
