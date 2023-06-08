@@ -2,8 +2,10 @@ import { getProgramMetadata } from "@gear-js/api";
 import { useAccount, useAlert, useApi } from "@gear-js/react-hooks";
 import { AnyJson } from "@polkadot/types/types";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Perfil() {
+	const navigate = useNavigate()
   const { accounts, account } = useAccount();
   const { api } = useApi();
 
@@ -38,7 +40,7 @@ function Perfil() {
   return (
     <section className="w-100">
       <div className="container py-3 h-100">
-        <div className="row justify-content-center align-items-center h-100">
+        <div className="row justify-content-center align-items-center h-70">
           <div className="col col-lg-6 mb-4 mb-lg-0">
             <div className="card mb-3 d-block">
               <div className="row g-0">
@@ -77,6 +79,7 @@ function Perfil() {
             </div>
           </div>
         </div>
+	  <button type="button" className="btn_back" onClick={() => navigate("/Principal")}>Back</button>
       </div>
     </section>
   );

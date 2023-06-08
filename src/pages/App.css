@@ -58,7 +58,7 @@
   text-decoration: none;
 }
 
-.btn_login {
+.btn_login, .btn_back {
   background: #c2e59c;
   background: -webkit-linear-gradient(
     to right,
@@ -176,4 +176,10 @@
   color: white;
   transition-duration: 0.4s;
   align-items: center;
+}
+
+.btn_back {
+	padding: 1rem 15%;
+	
+
 }
