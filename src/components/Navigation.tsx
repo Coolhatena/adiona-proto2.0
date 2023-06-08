@@ -31,7 +31,6 @@ function Navigation (){
             <Cruceros/>
             <Autos/>
             <Tours/>
-            <Ofertas/>
             </>
         )
 }

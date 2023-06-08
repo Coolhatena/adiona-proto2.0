@@ -1,3 +1,5 @@
+import { MintButton } from "./mintButton";
+
 function Autos () {
 	return(
         <form className="form">
@@ -36,7 +38,7 @@ function Autos () {
                     </select>
                 </div>
             </div>
-            <button type="submit" className="btn_buy">Comprar</button>
+            <MintButton text="Book" tokens={10} styleClass="btn_buy"/>
         </form>
     );
 }

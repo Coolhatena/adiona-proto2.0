@@ -1,3 +1,5 @@
+import { MintButton } from "./mintButton";
+
 function Hoteles () {
 	return(
         <form className="form">
@@ -36,7 +38,7 @@ function Hoteles () {
                     </select>
                 </div>
             </div>
-            <button type="submit" className="btn_buy">Comprar</button>
+            <MintButton text="Book" tokens={20} styleClass="btn_buy"/>
         </form>
     );
 }
