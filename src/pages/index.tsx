@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import './App.css';
-import Navigation from '../components/Navigation';
+import { Navigation } from '../components/Navigation';
 import { Login } from '../components/Login';
 
 function Routing() {

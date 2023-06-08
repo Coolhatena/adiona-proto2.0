@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Carousel from "./Carousel";
+import { Carousel } from "./Carousel";
 
-class Navigation extends Component{
-    render(){
+function Navigation (){
         return(
             <>
             <nav className='navbar navbar-light bg-light'>
-                <img src="logo_adiona.png" className="logo"/>
+                <img src="logo_adiona.png" alt="Logo adiona" className="logo"/>
                 
                 <div className="navbar" id="navbarNav">
                     <ul className="navbar_items nav">
@@ -21,19 +20,19 @@ class Navigation extends Component{
                 </div>
 
                 <button className="navbar-toggler" type="button" >
-                    <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon"/>
                 </button>
 
                 <div className="collapse navbar-collapse " id="Options">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Option1</a>
+                            <a className="nav-link" href="/#">Option1</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Option2</a>
+                            <a className="nav-link" href="/#">Option2</a>
                         </li>
                         <li className="nav-item">
-                             <a className="nav-link" href="#">Option3</a>
+                             <a className="nav-link" href="/#">Option3</a>
                         </li>
                     </ul>
                 </div>
@@ -41,7 +40,6 @@ class Navigation extends Component{
             <Carousel/>
             </>
             )
-    }
 }
 
-export default Navigation;
+export { Navigation };

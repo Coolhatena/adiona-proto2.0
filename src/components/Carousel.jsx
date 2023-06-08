@@ -1,38 +1,43 @@
-const Carousel = () => {
+function Carousel () {
 	return(
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
+		<div id="carouselExample" className="carousel slide" data-ride="carousel">
+            <ol className="carousel-indicators">
+                <li data-target="#carouselExample" data-slide-to="0" className="active"/>
+                <li data-target="#carouselExample" data-slide-to="1"/>
             </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active" style = {{backgroundImage: 'url("korea.jpeg")'}}>
-                    <div className="container">
-                        <h1>Example</h1>
-                        <p>Visita...</p>
-                    </div>
+            <div className="carousel-inner">
+                <div className="carousel-item active">
+                    <img src="./korea.jpeg" alt="Korea" className="d-block w-100"/>
                 </div>
-                <div class="carousel-item" style = {{backgroundImage: 'url("amsterdam.jpeg")'}}>
-                    <div className="container">
-                        <h1>Example</h1>
-                        <p>Visita...</p>
-                    </div>
+
+                <div className="carousel-item">
+                    <img src="./amsterdam.jpeg" alt="Amsterdam" className="d-block w-100"/>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="..." alt="Third slide" />
+
+                <div className="carousel-item">
+                    <img src="./estanbul.jpeg" alt="Estanbul" className="d-block w-100"/>
+                </div>
+
+                <div className="carousel-item">
+                    <img src="./moscu.jpeg" alt="Moscu" className="d-block w-100"/>
+                </div>
+
+                <div className="carousel-item">
+                    <img src="./praga.jpeg" alt="Praga" className="d-block w-100"/>
                 </div>
             </div>
-            <a href="#myCarousel" className="carousel-control-prev" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+
+            <a href="#carouselExample" className="carousel-control-prev" role="button" data-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"/>
+                <span className="visually-hidden">Anterior</span>
             </a>
-            <a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+
+            <a href="#carouselExample" className="carousel-control-next" role="button" data-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"/>
+                <span className="visually-hidden">Siguiente</span>
             </a>
         </div>
 	);
 }
 
-export default Carousel;
+export { Carousel };
