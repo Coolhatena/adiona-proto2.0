@@ -10,8 +10,8 @@ function Autos() {
         <div className="form-group text-start col-md-6 mb-4">
           <label htmlFor="Nombre Pasajero">Destination</label>
           <input
-            type="name"
-            id="name_pas"
+            type="text"
+            id="name_destination"
             className="form-control"
             placeholder="Destination"
           />
@@ -28,9 +28,9 @@ function Autos() {
         <div className="form-group text-start col-md-6 mb-4">
           <label htmlFor="password">Pick up</label>
           <input
-            type="password"
+            type="text"
             className="form-control"
-            id="password"
+            id="pickup"
             placeholder="Pick Up "
           />
         </div>
@@ -40,7 +40,7 @@ function Autos() {
         <input
           type="text"
           className="form-control"
-          id="inputAddress"
+          id="dropoff"
           placeholder="Drop Off"
         />
       </div>

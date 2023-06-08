@@ -10,14 +10,14 @@ function Hoteles() {
         <div className="form-group text-start col-md-6 mb-4">
           <label htmlFor="Nombre Pasajero">Destination</label>
           <input
-            type="name"
-            id="name_pas"
+            type="text"
+            id="name_destination"
             className="form-control"
             placeholder="Destination"
           />
         </div>
         <div className="form-group text-start col-md-6 mb-4">
-          <label htmlFor="fecha">Arraval Date / Leave Date</label>
+          <label htmlFor="fecha">Arraval Date </label>
           <input
             type="datetime-local"
             id="date"
@@ -26,11 +26,20 @@ function Hoteles() {
           />
         </div>
         <div className="form-group text-start col-md-6 mb-4">
+          <label htmlFor="fecha">Leave Date </label>
+          <input
+            type="datetime-local"
+            id="date"
+            className="form-control"
+            placeholder="Leave Date"
+          />
+        </div>
+        <div className="form-group text-start col-md-6 mb-4">
           <label htmlFor="password">Rooms</label>
           <input
-            type="password"
+            type="text"
             className="form-control"
-            id="password"
+            id="rooms"
             placeholder="1"
           />
         </div>

@@ -10,14 +10,14 @@ function Cruceros() {
         <div className="form-group text-start col-md-6 mb-4">
           <label htmlFor="Nombre Pasajero">Destination</label>
           <input
-            type="name"
-            id="name_pas"
+            type="text"
+            id="name_destination"
             className="form-control"
             placeholder="Destination"
           />
         </div>
         <div className="form-group text-start col-md-6 mb-4">
-          <label htmlFor="fecha">Departure date / Return Date</label>
+          <label htmlFor="fecha">Departure date </label>
           <input
             type="datetime-local"
             id="date"
@@ -25,12 +25,13 @@ function Cruceros() {
             placeholder="Departure Date"
           />
         </div>
+       
         <div className="form-group text-start col-md-6 mb-4">
           <label htmlFor="password">Port Departure</label>
           <input
-            type="password"
+            type="text"
             className="form-control"
-            id="password"
+            id="port_departure"
             placeholder="Port Departure"
           />
         </div>
