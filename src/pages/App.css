@@ -63,15 +63,14 @@
   color: #268598;
 }
 
-.btn_create:hover {
+.btn_create:hover{
   background: #268598;
   color: white;
 }
 
 .nav-link{
   color: #268598;
-  font-size: 1.1rem;
-  text-align: left;
+  font-size: 1.4rem;
 }
 
 .navbar-toggler {
@@ -83,6 +82,7 @@
   background: #777;
   color: white;
   position: relative;
+  display: flex;
   background-position: center;
   background-size: cover;
 }
@@ -93,4 +93,36 @@
   left: 0;
   right: 0;
   padding-bottom: 50px;
+}
+
+.form{
+  text-align: center;
+  display: block;
+  height: 60%;
+  width: 90%;
+  padding: 10%;
+}
+
+.form_r{
+  text-align: right;
+  display: block;
+  height: 60%;
+  width: 90%;
+  padding: 10%;
+}
+
+h1 {
+  color:#268598;
+  text-align: left;
+  font-size: 3.5rem;
+}
+
+.btn_buy {
+  background: #268598;
+  border: 2px solid #268598;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  padding: 1% 6%;
+  color: white;
+  transition-duration: 0.4s;
 }

@@ -1,5 +1,11 @@
 import { Link } from "react-router-dom";
 import { Carousel } from "./Carousel";
+import { Vuelos } from "./Vuelos";
+import { Hoteles } from "./Hoteles";
+import { Cruceros } from "./Cruceros";
+import { Autos } from "./Autos";
+import { Tours } from "./Tours";
+import { Ofertas } from "./Ofertas";
 
 function Navigation (){
         return(
@@ -10,11 +16,11 @@ function Navigation (){
                 <div className="navbar" id="navbarNav">
                     <ul className="navbar_items nav">
                         <Link to="/Vuelos" className="nav-link">Vuelos</Link>
-                        <Link Link to="/Hoteles" className="nav-link">Hoteles</Link>
-                        <Link Link to="/Cruceros" className="nav-link">Cruceros</Link>
-                        <Link Link to="/Autos" className="nav-link">Autos</Link>
-                        <Link Link to="/Tours" className="nav-link">Tours</Link>
-                        <Link Link to="/Ofertas" className="nav-link">Ofertas</Link>
+                        <Link to="/Hoteles" className="nav-link">Hoteles</Link>
+                        <Link to="/Cruceros" className="nav-link">Cruceros</Link>
+                        <Link to="/Autos" className="nav-link">Autos</Link>
+                        <Link to="/Tours" className="nav-link">Tours</Link>
+                        <Link to="/Ofertas" className="nav-link">Ofertas</Link>
                     </ul>
                 </div>
 
@@ -37,8 +43,14 @@ function Navigation (){
                 </div>
             </nav>
             <Carousel/>
+            <Vuelos/>
+            <Hoteles/>
+            <Cruceros/>
+            <Autos/>
+            <Tours/>
+            <Ofertas/>
             </>
-            )
+        )
 }
 
 export { Navigation };

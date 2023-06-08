@@ -23,6 +23,7 @@ module.exports = {
   plugins: ['react', '@typescript-eslint'],
   rules: {
     'react/require-default-props': 'off', // we don't use prop-types
+    'jsx-a11y/label-has-associated-control': 'off',
 
     'import/prefer-default-export': 'off', // force named exports
     'import/no-default-export': 'error',
