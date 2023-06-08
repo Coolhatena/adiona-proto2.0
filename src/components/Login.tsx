@@ -1,7 +1,23 @@
-import { Link } from "react-router-dom";
-import { MintButton } from './mintButton';
+import { FormEvent } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 export function Login() {
+	const navigate = useNavigate();
+
+	const onLogin = () => {
+		const email = document.getElementById("email") as HTMLInputElement | null;
+		const password = document.getElementById("password") as HTMLInputElement | null;
+
+		if (email?.value === "adiona@gmail.com" && password?.value === "adiona123"){
+			navigate("/Principal");
+		}
+	}
+
+	const onSubmit = (e: FormEvent) => {
+		e.preventDefault();
+	}
+
 
 	return(
 		<section className="h-100 gradient-form">
@@ -22,20 +38,18 @@ export function Login() {
 											<a className="sign_up" href="#!">Sign up</a>
 										</div>
 										
-										<form className="text-center">
+										<form className="text-center" onSubmit={onSubmit}>
 											<div className="form-outline mb-4 mb-2">
-												<input type="email" id="form2Example11" className="form-control" placeholder="Email address" />
+												<input type="email" id="email" className="form-control" placeholder="Email address" />
 											</div>
 
 											<div className="form-outline mb-4">
-												<input type="password" id="form2Example22" className="form-control" placeholder="Password" />
+												<input type="password" id="password" className="form-control" placeholder="Password" />
 											</div>
 
 											<div className="text-center pt-3 mb-2 pb-1">
-												<button className="btn_login" type="submit">
-													<Link to="/Principal" className="sign_in">
+												<button className="btn_login sign_in" type="submit" onClick={onLogin}>
 														Sign in
-													</Link>
 												</button>
 											</div>
 
