@@ -8,7 +8,7 @@ function Cruceros() {
       </div>
       <div className="form-row">
         <div className="form-group text-start col-md-6 mb-4">
-          <label htmlFor="Nombre Pasajero">Destination</label>
+          <label htmlFor="Nombre Pasajero" style={{color: "#A88043"}}>Destination</label>
           <input
             type="text"
             id="name_destination"
@@ -17,7 +17,7 @@ function Cruceros() {
           />
         </div>
         <div className="form-group text-start col-md-6 mb-4">
-          <label htmlFor="fecha">Departure date </label>
+          <label htmlFor="fecha" style={{color: "#A88043"}}>Departure date </label>
           <input
             type="datetime-local"
             id="date"
@@ -27,7 +27,7 @@ function Cruceros() {
         </div>
        
         <div className="form-group text-start col-md-6 mb-4">
-          <label htmlFor="password">Port Departure</label>
+          <label htmlFor="text" style={{color: "#A88043"}}>Port Departure</label>
           <input
             type="text"
             className="form-control"
@@ -38,7 +38,7 @@ function Cruceros() {
       </div>
 
       <div className="form-group text-start col-md-6 mb-4">
-        <label>Guests</label>
+        <label style={{color: "#A88043"}}>Guests</label>
         <input
           type="number"
           min="1"
@@ -49,14 +49,15 @@ function Cruceros() {
       </div>
       <div className="form-row text-start col-md-6 mb-4">
         <div className="form-group col-md-6 mb-4">
-          <label>Number of days</label>
+          <label style={{color: "#A88043"}}>Number of days</label>
           <select className="form-control" id="tipo" name="tipo">
+            <option value="volvo">1-2 Days</option>
             <option value="volvo">3-4 Days</option>
             <option value="saab">5-6 Days</option>
           </select>
         </div>
+        <MintButton text="Book" tokens={25} styleClass="btn_buy" />
       </div>
-      <MintButton text="Book" tokens={25} styleClass="btn_buy" />
     </form>
   );
 }
