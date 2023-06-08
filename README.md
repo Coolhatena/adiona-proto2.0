@@ -23,7 +23,10 @@ Create `.env` file, `.env.example` will let you know what variables are expected
 
 In order for all features to work as expected, the node and it's runtime version should be chosen based on the current `@gear-js/api` version.
 
-To prevent issues with the application, we strongly suggest using `REACT_APP_NODE_ADDRESS=wss://rpc-node.gear-tech.io` as environment variable.
+To prevent issues with the application, use `REACT_APP_NODE_ADDRESS=wss://rpc-node.gear-tech.io` as environment variable.
+
+We strongly recommend to install the [Polkadot extension](https://polkadot.js.org/extension/) and create a account to access to all the program features.
+
 
 ### Run the app:
 
