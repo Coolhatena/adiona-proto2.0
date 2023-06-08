@@ -9,7 +9,7 @@ function Perfil() {
 
   const alert = useAlert();
 
-  const [fullState, setFullState] = useState();
+  const [fullState, setFullState] = useState({totalSupply: 0});
 
   // Add your codeID
   const codeId = account?.address;

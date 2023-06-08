@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useAccount } from "@gear-js/react-hooks";
 import { Carousel } from "./Carousel";
 import { Vuelos } from "./Vuelos";
 import { Hoteles } from "./Hoteles";
@@ -8,6 +9,8 @@ import { Tours } from "./Tours";
 import { Account } from "./layout/header/account/Account";
 
 function Navigation() {
+	const { account, accounts } = useAccount();
+
   return (
     <>
       <nav className="navbar navbar-light bg-light">
@@ -30,7 +33,7 @@ function Navigation() {
             <Link to="/Tours" className="nav-link">
               Tours
             </Link>
-            <Link to="/Perfil" className="nav-link">
+            <Link to={account? "/Perfil" : "/Principal"} className="nav-link">
               Profile
             </Link>
           </ul>
