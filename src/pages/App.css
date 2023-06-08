@@ -21,8 +21,8 @@
 }
 
 .logo{
-  height: 20%;
-  width: 20%;
+  width: 16rem;
+  min-width: 10rem;
 }
 
 .form-control {
@@ -71,20 +71,36 @@
 .nav-link{
   color: #268598;
   font-size: 1.4rem;
+  text-align: center;
+  padding-right: 1.5rem;
+}
+
+.navbar_items {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  padding-right: 27rem;
 }
 
 .navbar-toggler {
   margin: 1.5rem;
 }
 
+.navbar {
+  text-align: center;
+  align-items: center;
+  padding-right: 1.5rem;
+}
+
 .carousel-item {
-  height: 32rem;
+  height: 30rem;
+  width: 100%;
   background: #777;
   color: white;
-  position: relative;
-  display: flex;
+  position:relative;
   background-position: center;
-  background-size: cover;
+  align-items: center;
+  background-size:cover;
 }
 
 .container {
@@ -95,26 +111,31 @@
   padding-bottom: 50px;
 }
 
+.overlay-image {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
 .form{
   text-align: center;
   display: block;
   height: 60%;
   width: 90%;
-  padding: 10%;
+  padding: 4% 10%;
 }
 
-.form_r{
-  text-align: right;
-  display: block;
-  height: 60%;
-  width: 90%;
-  padding: 10%;
-}
-
-h1 {
-  color:#268598;
+.title h1{
+  background: linear-gradient(#0C3547, #3C98A3);
+  background-clip: text;
+  color: transparent; 
+  font-size: 4rem;
   text-align: left;
-  font-size: 3.5rem;
 }
 
 .btn_buy {

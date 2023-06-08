@@ -21,24 +21,8 @@ function Navigation (){
                         <Link to="/Cruceros" className="nav-link">Cruceros</Link>
                         <Link to="/Autos" className="nav-link">Autos</Link>
                         <Link to="/Tours" className="nav-link">Tours</Link>
-                        <Link to="/Ofertas" className="nav-link">Ofertas</Link>
-                		<Account/>
                     </ul>
-                </div>
-
-
-                <div className="collapse navbar-collapse " id="Options">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a className="nav-link" href="/#">Option1</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/#">Option2</a>
-                        </li>
-                        <li className="nav-item">
-                             <a className="nav-link" href="/#">Option3</a>
-                        </li>
-                    </ul>
+                    <Account/>
                 </div>
             </nav>
             <Carousel/>
