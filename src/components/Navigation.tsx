@@ -5,7 +5,6 @@ import { Hoteles } from "./Hoteles";
 import { Cruceros } from "./Cruceros";
 import { Autos } from "./Autos";
 import { Tours } from "./Tours";
-import { Ofertas } from "./Ofertas";
 import { Account } from "./layout/header/account/Account";
 
 function Navigation (){
@@ -32,7 +31,6 @@ function Navigation (){
             <Cruceros/>
             <Autos/>
             <Tours/>
-            <Ofertas/>
             </>
         )
     }

@@ -107,7 +107,7 @@
   align-items: center;
   text-align: center;
   display: flex;
-  padding-right: 25rem;
+  padding-right: 18rem;
 }
 
 .navbar-toggler {
@@ -117,7 +117,7 @@
 .navbar {
   text-align: center;
   align-items: center;
-  padding-right: 1.5rem;
+  padding-right: 1rem;
 }
 
 .carousel-item {
@@ -163,6 +163,7 @@
   background-clip: text;
   color: transparent;
   font-size: 4rem;
+  padding-bottom: 1rem;
   text-align: left;
 }
 
@@ -171,7 +172,7 @@
   border: 2px solid #268598;
   border-radius: 8px;
   font-size: 1.1rem;
-  padding: 1% 6%;
+  padding: 1% 15%;
   color: white;
   transition-duration: 0.4s;
 }

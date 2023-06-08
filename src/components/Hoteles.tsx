@@ -8,7 +8,7 @@ function Hoteles() {
       </div>
       <div className="form-row">
         <div className="form-group text-start col-md-6 mb-4">
-          <label htmlFor="Nombre Pasajero">Destination</label>
+          <label htmlFor="Nombre Pasajero" style={{color: "#A88043"}}>Destination</label>
           <input
             type="name"
             id="name_pas"
@@ -17,26 +17,23 @@ function Hoteles() {
           />
         </div>
         <div className="form-group text-start col-md-6 mb-4">
-          <label htmlFor="fecha">Arraval Date / Leave Date</label>
+          <label htmlFor="fecha" style={{color: "#A88043"}}>Arraval Date</label>
           <input
             type="datetime-local"
             id="date"
             className="form-control"
-            placeholder="Arrival Date"
           />
         </div>
         <div className="form-group text-start col-md-6 mb-4">
-          <label htmlFor="password">Rooms</label>
+          <label htmlFor="fecha" style={{color: "#A88043"}}>Leave Date</label>
           <input
-            type="password"
+            type="datetime-local"
+            id="date"
             className="form-control"
-            id="password"
-            placeholder="1"
           />
         </div>
-      </div>
-      <div className="form-group text-start w-25 mb-4">
-        <label>Adults</label>
+        <div className="form-group text-start w-25 mb-4">
+        <label style={{color: "#A88043"}}>Rooms</label>
         <input
           type="number"
           min="1"
@@ -45,8 +42,19 @@ function Hoteles() {
           id="inputAddress2"
         />
       </div>
-      <div className="form-group text-start col-md-6 mb-4">
-        <label>Minors</label>
+      </div>
+      <div className="form-group text-start w-25 mb-4">
+        <label style={{color: "#A88043"}}>Adults</label>
+        <input
+          type="number"
+          min="1"
+          max="20"
+          className="form-control"
+          id="inputAddress2"
+        />
+      </div>
+      <div className="form-group text-start w-25 mb-4">
+        <label style={{color: "#A88043"}}>Minors</label>
         <input
           type="number"
           min="1"
@@ -57,7 +65,7 @@ function Hoteles() {
       </div>
       <div className="form-row text-start col-md-6 mb-4">
         <div className="form-group text-start col-md-6 mb-6">
-          <label>Star rating</label>
+          <label style={{color: "#A88043"}}>Star rating</label>
           <select className="form-control text-start" id="tipo" name="tipo">
             <option value="volvo">5 Star</option>
             <option value="saab">4 Star</option>
