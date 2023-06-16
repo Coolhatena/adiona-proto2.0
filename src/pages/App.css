@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
@@ -40,8 +44,8 @@
 }
 
 .logo {
-  max-width: 12rem;
-  min-width: 9rem;
+  max-width: 10rem;
+  min-width: 7rem;
 }
 
 .form-control {
