@@ -48,7 +48,7 @@ function Navigation() {
 	  <p id="cruceros"/>
       <Cruceros />
 	  <p id="autos"/>
-      <Autos />Carousel
+      <Autos />
 	  <p id="tours"/>
       <Tours />
     </>
