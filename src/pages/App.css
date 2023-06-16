@@ -25,8 +25,8 @@
 
 .Design_user {
   background: #c2e59c; 
-  background: -webkit-linear-gradient(to right, #0C3547, #3C98A3);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0C3547, #3C98A3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #0C3547, #3C98A3); 
+  background: linear-gradient(to right, #0C3547, #3C98A3); 
   width: 100%;
   display: block;
   padding: 10%;
@@ -184,9 +184,16 @@
 
 .part1 {
   text-align: left;
-  background: #268598;
+  background: #3C98A3;
 }
 
 .part2 {
   text-align: right;
+  height: 75%;
+}
+
+.slogan_principal{
+  color: white;
+  margin-left: 4rem;
+  margin-top: 3rem;
 }

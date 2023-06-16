@@ -13,11 +13,23 @@ function Navigation() {
 
   return (
     <>
-    <div className="part1 w-50 d-inline-block">
-      <img src="logo_adiona.png" alt="Logo adiona" className="logo" />
-    </div>
-    <div className="part2 w-50 d-inline-block">
-      part2
+    <div className="bienvenida d-flex flex-row">
+      <div className="part1 w-50 bd-highlight">
+        
+        <div className="nav-logo">
+          <img src="logo_adiona.png" alt="Logo adiona" className="logo" />
+        </div>
+
+        <div className="slogan_principal">
+          <h1>Atrevete</h1>
+          <h3>a visitar nuevos lugares</h3>
+        </div>
+
+      </div>
+
+      <div className="part2 w-50 bd-highlight">
+        <Carousel />
+      </div>
     </div>
       <nav className="navbar navbar-light bg-light">
         <img src="logo_adiona.png" alt="Logo adiona" className="logo" />
