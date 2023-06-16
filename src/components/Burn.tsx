@@ -1,13 +1,14 @@
 import { useAccount, useApi, useAlert } from "@gear-js/react-hooks";
 import { web3FromSource } from "@polkadot/extension-dapp";
 import { getProgramMetadata } from "@gear-js/api";
-import { Button } from "@gear-js/ui";
+import { Button} from "@gear-js/ui";
 
 type Props = {
-	numberOfTokens: number
+	price: number,
+	buttonStyle: object
   };
 
-function Burn({numberOfTokens}: Props) {
+function Burn({price, buttonStyle}: Props) {
   const alert = useAlert();
   const { accounts, account } = useAccount();
   const { api } = useApi();
@@ -24,7 +25,7 @@ function Burn({numberOfTokens}: Props) {
 
   const message: any = {
     destination: programIDFT, // programId
-    payload: { burn: numberOfTokens },
+    payload: { burn: price },
     gasLimit: 899819245,
     value: 0,
   };
@@ -67,7 +68,7 @@ function Burn({numberOfTokens}: Props) {
     }
   };
 
-  return <Button text="Burn" onClick={signer} />;
+  return <Button style={buttonStyle} text={`Price: ${price} AdionaCoins`} onClick={signer} />;
 }
 
 export { Burn };
