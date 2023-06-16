@@ -39,6 +39,9 @@ function Navigation() {
             <a href="#tours" className="nav-link">
               Tours
             </a>
+			<Link to={account? "/Recompensas" : "/Principal"} className="nav-link">
+              Rewards
+            </Link>
             <Link to={account? "/Perfil" : "/Principal"} className="nav-link">
               Profile
             </Link>
