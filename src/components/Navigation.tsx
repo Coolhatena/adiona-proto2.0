@@ -13,6 +13,12 @@ function Navigation() {
 
   return (
     <>
+    <div className="part1 w-50 d-inline-block">
+      <img src="logo_adiona.png" alt="Logo adiona" className="logo" />
+    </div>
+    <div className="part2 w-50 d-inline-block">
+      part2
+    </div>
       <nav className="navbar navbar-light bg-light">
         <img src="logo_adiona.png" alt="Logo adiona" className="logo" />
 

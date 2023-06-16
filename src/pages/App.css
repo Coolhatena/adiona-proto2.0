@@ -40,8 +40,8 @@
 }
 
 .logo {
-  width: 16rem;
-  min-width: 10rem;
+  max-width: 12rem;
+  min-width: 9rem;
 }
 
 .form-control {
@@ -180,6 +180,13 @@
 
 .btn_back {
 	padding: 1rem 15%;
-	
+}
 
+.part1 {
+  text-align: left;
+  background: #268598;
+}
+
+.part2 {
+  text-align: right;
 }
