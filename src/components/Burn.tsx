@@ -3,7 +3,11 @@ import { web3FromSource } from "@polkadot/extension-dapp";
 import { getProgramMetadata } from "@gear-js/api";
 import { Button } from "@gear-js/ui";
 
-function Burn() {
+type Props = {
+	numberOfTokens: number
+  };
+
+function Burn({numberOfTokens}: Props) {
   const alert = useAlert();
   const { accounts, account } = useAccount();
   const { api } = useApi();
@@ -20,7 +24,7 @@ function Burn() {
 
   const message: any = {
     destination: programIDFT, // programId
-    payload: { burn: 1000 },
+    payload: { burn: numberOfTokens },
     gasLimit: 899819245,
     value: 0,
   };
