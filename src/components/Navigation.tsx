@@ -1,12 +1,13 @@
-
 import { useAccount } from "@gear-js/react-hooks";
 import { Carousel } from "./Carousel";
 import { Account } from "./layout/header/account/Account";
+import { Opiniones } from "./Opiniones";
 
 function Navigation() {
 	const { account, accounts } = useAccount();
 
   return (
+  <>
     <div className="bienvenida d-flex flex-row">
       <div className="part1 w-50 bd-highlight">
 
@@ -16,12 +17,12 @@ function Navigation() {
 
         <div className="slogan_principal">
           <h1 className="m-2 text-xl font-extrabold tracking-tight text-white-900 md:text-2xl lg:text-6xl dark:text-white">Visit the destination of your dreams</h1>
-          <p className="texto">Conoce nuestro catálogo y viaja.</p>
+          <p className="texto">Discover the word with us.</p>
         </div>
 
       </div>
 
-      <div className="part2 w-50 bd-highlight">
+      <div className="part2 w-50 bd-highlight d-inline-block">
         <nav className="bg-white w-100 h-25">
           <div className="w-100">
             <div className="w-100 d-inline-block" id="navbar-default">
@@ -45,6 +46,8 @@ function Navigation() {
         <Carousel />
       </div>
     </div>
+    <Opiniones/>
+  </>
   );
 }
 export { Navigation };
