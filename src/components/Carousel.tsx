@@ -7,7 +7,7 @@ function Carousel() {
     >
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src="./korea.jpeg" alt="Korea" className="overlay-image" />
+          <img src="./seoul.jpeg" alt="Seoul" className="overlay-image" />
           <div className="container">
             <h1>Seoul</h1>
             <p>Discover new places now</p>
