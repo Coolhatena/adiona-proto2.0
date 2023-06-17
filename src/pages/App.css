@@ -236,6 +236,7 @@ html, body, .App, #root {
   margin-bottom: 1rem;
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+<<<<<<< HEAD
 }
 
 .Recompensa {
@@ -297,4 +298,8 @@ h3 {
 
 .contenedor {
   width: 100%;
+}
+
+.dropdownButton {
+	text-align: center!important;
 }
