@@ -1,10 +1,19 @@
 function Flights() {
     return (
         <div className="flight">
-            <video className="vuelo" autoPlay muted controls>
-                <source src="vuelo.mp4" type="video/mp4"/>
-                Your browser does not support the video tag.
-            </video>
+            <div className="vuelo">
+                <video className="vuelo contrast-100" autoPlay muted controls>
+                    <source src="vuelo.mp4" type="video/mp4"/>
+                </video>
+                <div className="container_vuelo">
+                        <h1>Preparate para viajar!</h1>
+                        <button
+                          className="btn_login sign_in"
+                          type="submit">
+                          Sign in
+                        </button>
+                    </div>
+            </div>
 
             <form>
                 <div className="form-row">
