@@ -32,10 +32,13 @@
   background: -webkit-linear-gradient(to right, #0C3547, #3C98A3); 
   background: linear-gradient(to right, #0C3547, #3C98A3); 
   width: 100%;
-  display: block;
   padding: 10%;
   align-items: center;
   color: white;
+}
+
+.Design_user img {
+	display: inline;
 }
 
 .Logo {
