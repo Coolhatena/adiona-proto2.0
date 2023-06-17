@@ -2,7 +2,7 @@ function Opiniones() {
     return(
         <div className="dark:bg-gray-900 d-inline-block">
             <h2 className="testimonials">Testimonials</h2>
-            <p className="mb-8 text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Our travelers speak their minds, we love to hear them</p>
+            <p className="text">Our travelers speak their minds, we love to hear them</p>
       
             <div className="grid mb-8 lg:mb-12 lg:grid-cols-2">
                 <figure className="p-4 max-w-screen-md mx-auto">
@@ -15,6 +15,7 @@ function Opiniones() {
                     </blockquote>
                     
                     <figcaption className="flex items-center justify-center mt-2 space-x-3">
+                        <img className="w-10 h-10 rounded-full" src="zunni.jpeg" alt="zunni"/>
                         <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                             <div className="pr-3 font-medium text-gray-900 dark:text-white">Zunni Rojas</div>
                             <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Delivery Men</div>
@@ -30,6 +31,7 @@ function Opiniones() {
                         <p className="pl-6 pr-6 text-xl font-medium text-gray-900 dark:text-white">&#34;Adiona Travel Agency&lsquo;s expertise and attention to detail are unmatched. They exceeded my expectations with a seamless multi-country tour. My go-to agency for future travels.&#34;</p>
                     </blockquote>
                     <figcaption className="flex items-center justify-center mt-2 space-x-3">
+                        <img className="w-10 h-10 rounded-full" src="sabrina.jpeg" alt="sabrina"/>
                         <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                             <div className="pr-3 font-medium text-gray-900 dark:text-white">Sabrina Santos</div>
                             <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Student</div>
@@ -47,6 +49,7 @@ function Opiniones() {
                         <p className="pl-6 pr-6 text-xl text-justif font-medium text-gray-900 dark:text-white">&#34;Adiona Travel Agency made our honeymoon unforgettable. From airport transfers to surprise perks, their personalized service and meticulous planning were exceptional. Highly recommended!&#34;</p>
                     </blockquote>
                     <figcaption className="flex items-center justify-center mt-2 space-x-3">
+                        <img className="w-10 h-10 rounded-full" src="yeika.jpeg" alt="yeika"/>
                         <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                             <div className="pr-3 font-medium text-gray-900 dark:text-white">Yeika Duran</div>
                             <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Medic</div>
@@ -62,6 +65,7 @@ function Opiniones() {
                         <p className="pl-6 pr-6 text-xl font-medium text-gray-900 dark:text-white">&#34;Adiona Travel Agency&lsquo;s group tour was phenomenal. Knowledgeable guides, comfortable accommodations, and well-planned itineraries made exploring new cities a breeze. Impressed with their professionalism and commitment to customer satisfaction.&#34;</p>
                     </blockquote>
                     <figcaption className="flex items-center justify-center mt-2 space-x-3">
+                        <img className="w-10 h-10 rounded-full" src="erick.jpeg" alt="erick"/>
                         <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                             <div className="pr-3 font-medium text-gray-900 dark:text-white">Erick Villa</div>
                             <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Student</div>
