@@ -9,7 +9,7 @@ type Props = {
 
 function RewardCard({title, description, price}: Props) {
 	return (
-	<div style={RewardCardStyles.div}>
+	<div style={RewardCardStyles.div} className="shadow shadow-black/5 ">
 		<p style={RewardCardStyles.title}>{title.toUpperCase()}</p>
 		<p >{description}</p>
 		<div style={RewardCardStyles.buttonDiv}>

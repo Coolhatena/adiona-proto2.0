@@ -2,16 +2,18 @@ const RecompensasStyles = {
 	div: {
 		display: "flex",
 		justifyContent: "center",
+		width: "100%",
 	},
 
 	grid: {
 		display: "grid",
 		padding: "1rem",
 		grid: "repeat(2, 1fr) / repeat(2, 1fr)",
-		columnGap: "0.5rem",
-		rowGap: "1.5rem",
+		columnGap: "3rem",
+		rowGap: "2rem",
 		justifyItems: "center",
-		width: "70%",
+		width: "80%",
+		height: "fit-content",
 	}
 
 }

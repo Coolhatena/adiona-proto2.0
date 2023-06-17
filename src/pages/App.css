@@ -6,6 +6,11 @@
   text-align: center;
 }
 
+html, body, .App, #root {
+  margin: 0;
+  height: 100%;
+}
+
 .Options {
   text-align: left;
 }
@@ -145,11 +150,6 @@
   font-size: 1rem;
 }
 
-.container h1{
-  font-size: 1.9rem;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
 .overlay-image {
   position:absolute;
   background-position: center;
@@ -236,4 +236,65 @@
   margin-bottom: 1rem;
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Recompensa {
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  border-radius: 10px;
+  background-color: #eea63b;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+  text-align: center;
+}
+
+.user {
+  max-width: 9rem;
+  min-width: 6rem;
+  align-items: center;
+  text-align: center;
+}
+
+.nav_link {
+  background: #A88043;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  color: #ffc369;
+  padding: 2% 35%;
+  opacity: 0.7;
+}
+
+h3 {
+  color: white;
+}
+
+.recom {
+  max-width: 35%;
+  background-color: white;
+  text-align: left;
+  display: inline-block;
+}
+
+.div_recom {
+  min-width: 20%;
+  display: flex;
+}
+
+.title_g{
+  background: linear-gradient(to right, #c18c3c, #eea63b);
+  background-clip: text;
+  color: transparent;
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contenedor {
+  width: 100%;
 }

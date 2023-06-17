@@ -8,10 +8,13 @@ const RewardCardStyles = {
 		borderRadius: "10px",
 		boxShadow: "0.5px 0.5px 10px black",
 		width: "fit-content",
+		height: "100%",
 	},
 
 	title: {
-		fontWeight: "bold"
+		fontWeight: "bold",
+		"font-size": "1.8rem",
+		
 	},
 
 	buttonDiv: {
