@@ -23,18 +23,18 @@ function Navigation() {
       </div>
 
       <div className="part2 w-50 bd-highlight d-inline-block">
-        <nav className="bg-white w-100 h-25">
+        <nav className="w-100 h-25">
           <div className="w-100">
             <div className="w-100 d-inline-block" id="navbar-default">
-              <ul className="flex flex-col font-medium p-4 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800">
+              <ul className="flex flex-col font-medium p-4 md:flex-row md:space-x-8 md:mt-0 md:border-0 light:bg-white dark:bg-gray-800">
                 <li>
-                  <a href="/#" className="block py-2 pl-3 pr-4 text-black bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Booking</a>
+                  <a href="/#" className="block py-2 pl-3 pr-4 light:text-black  rounded md:bg-transparent md:p-0 dark:text-white" aria-current="page">Booking</a>
                 </li>
                 <li>
-                  <a href={account? "/Recompensas" : "/Principal"} className="block py-2 pl-3 pr-4 text-black bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Rewards</a>
+                  <a href={account? "/Recompensas" : "/Principal"} className="block py-2 pl-3 pr-4 light:text-black rounded md:bg-transparent md:p-0 dark:text-white " aria-current="page">Rewards</a>
                 </li>
                 <li>
-                  <a href={account? "/Perfil" : "/Principal"} className="block py-2 pl-3 pr-4 text-black bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Profile</a>
+                  <a href={account? "/Perfil" : "/Principal"} className="block py-2 pl-3 pr-4 light:text-black rounded md:bg-transparent md:p-0 dark:text-white" aria-current="page">Profile</a>
                 </li>
                 <li className="ml-75">
                   <Account />
