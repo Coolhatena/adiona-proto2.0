@@ -4,7 +4,7 @@ import { Account } from "./layout/header/account/Account";
 import { Opiniones } from "./Opiniones";
 
 function Navigation() {
-	const { account, accounts } = useAccount();
+	const { account } = useAccount();
 
   return (
   <>
@@ -28,7 +28,15 @@ function Navigation() {
             <div className="w-100 d-inline-block" id="navbar-default">
               <ul className="flex flex-col font-medium p-4 md:flex-row md:space-x-8 md:mt-0 md:border-0 light:bg-white dark:bg-gray-800">
                 <li>
-                  <a href="/#" className="block py-2 pl-3 pr-4 light:text-black  rounded md:bg-transparent md:p-0 dark:text-white" aria-current="page">Booking</a>
+					<div className="dropdown show">
+                  		<a href="/#" className=" dropdown-toggle block py-2 pl-3 pr-4 light:text-black  rounded md:bg-transparent md:p-0 dark:text-white"role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Booking</a>
+						<div className="dropdown-menu dropdownContainer text-align-center" aria-labelledby="dropdownMenuLink">
+							<a href="/#" className="dropdown-item dropdownButton">Flights</a>
+							<a href="/#" className="dropdown-item dropdownButton">Cruises</a>
+							<a href="/#" className="dropdown-item dropdownButton">Tours</a>
+							<a href="/#" className="dropdown-item dropdownButton">Car rental</a>
+						</div>
+					</div>
                 </li>
                 <li>
                   <a href={account? "/Recompensas" : "/Principal"} className="block py-2 pl-3 pr-4 light:text-black rounded md:bg-transparent md:p-0 dark:text-white " aria-current="page">Rewards</a>
