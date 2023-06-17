@@ -12,7 +12,7 @@ const RecompensasStyles = {
 		columnGap: "3rem",
 		rowGap: "2rem",
 		justifyItems: "center",
-		width: "80%",
+		width: "70%",
 		height: "fit-content",
 	}
 

@@ -51,7 +51,7 @@ function Recompensas() {
 			</div>
 
 			<div className="contenedor">
-					<h1 className="title_g">Adiona Rewards</h1>
+				<h1 className="title_g ">Adiona Rewards</h1>
 				<div style={RecompensasStyles.div}>
 					<div style={RecompensasStyles.grid}>
 						<RewardCard title="1 Free Night" description="Get 1 free night with any participant Hilton Hotel" price={100}/>

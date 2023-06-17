@@ -1,4 +1,3 @@
-import { isAbsolute, relative } from "path";
 
 const RewardCardStyles = {
 	div: {
@@ -19,6 +18,10 @@ const RewardCardStyles = {
 		
 	},
 
+	description: {
+		flexGrow: 1
+	},
+
 	buttonDiv: {
 		"marginTop": "1rem",
 		display: "flex",
@@ -28,7 +31,7 @@ const RewardCardStyles = {
 
 	button: {
 		maxWidth: "10rem",
-	},
+	}
 };
 
 export { RewardCardStyles };
