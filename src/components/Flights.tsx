@@ -1,3 +1,5 @@
+import { MintButton } from "./mintButton";
+
 function Flights() {
     return (
         <div className="flight">
@@ -8,7 +10,7 @@ function Flights() {
             </div>
             <div className="container_vuelo">
                 <h1>Preparate para viajar!</h1>
-                    <button className="btn_login sign_in" type="submit">
+                    <button className="btn_login sign_in m-1" type="submit">
                           Sign in
                     </button>
             </div>
@@ -61,7 +63,7 @@ function Flights() {
                         </div>
                     </div>
                 </div>
-                <button className="btn_reservar" type="submit">Submit form</button>
+				<MintButton styleClass="btn_reservar" text="Book now!" tokens={100}/>
             </form>
         </div>
     );
