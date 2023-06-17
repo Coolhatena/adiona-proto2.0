@@ -6,6 +6,12 @@ function Flights() {
                     <source src="vuelo.mp4" type="video/mp4"/>
                 </video>
             </div>
+            <div className="container_vuelo">
+                <h1>Preparate para viajar!</h1>
+                    <button className="btn_login sign_in" type="submit">
+                          Sign in
+                    </button>
+            </div>
 
             <form className="pl-16 pr-16">
                 <h1 className="pt-4 pb-4">Reservacion de vuelo</h1>
