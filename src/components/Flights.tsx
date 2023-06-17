@@ -10,12 +10,12 @@ function Flights() {
             </div>
             <div className="container_vuelo">
                 <h1>Preparate para viajar!</h1>
-                    <button className="btn_login sign_in m-1" type="submit">
+                    <a href="#data" className="btn_login sign_in m-1" type="submit">
                           Sign in
-                    </button>
+                    </a>
             </div>
 
-            <form className="pl-16 pr-16">
+            <form id="data" className="pl-16 pr-16">
                 <h1 className="pt-4 pb-4">Reservacion de vuelo</h1>
                 <div className="form-row d-flex text-left">
                     <div className="col m-4">
