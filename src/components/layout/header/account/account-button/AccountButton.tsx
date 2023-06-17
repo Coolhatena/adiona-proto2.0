@@ -12,16 +12,29 @@ type Props = {
 
 function AccountButton({ address, name, onClick, isActive, block }: Props) {
   const className = clsx(
-    buttonStyles.button,
-    buttonStyles.medium,
     isActive ? buttonStyles.primary : buttonStyles.light,
     block && buttonStyles.block,
   );
 
+  const styles = {
+		"align-items": "center",
+		"border-radius": "24px",
+		"display": "inline-flex",
+		"font-weight": "600",
+		"justify-content": "space-between",
+		"transition": "all .25s",
+		"font-size": "14px",
+		"line-height": "16px",
+		"max-height": "40px",
+		"padding": "12px 24px",
+		"background-color": "hsla(0, 0%, 100%, .102)"
+	}
+
+
   return (
-    <button type="button" className={className} onClick={onClick}>
+    <button type="button" style={styles} onClick={onClick}>
       <Identicon value={address} className={buttonStyles.icon} theme="polkadot" size={28} />
-      {name}
+      <p style={{marginLeft: "0.5rem"}}>{name}</p>
     </button>
   );
 }
