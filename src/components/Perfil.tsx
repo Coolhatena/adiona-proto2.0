@@ -60,7 +60,7 @@ function Perfil() {
 												</p>
 											</div>
 										</div>
-										<h6>Information</h6>
+										<h6 className="pt-3">Information</h6>
 										<div className="row pt-1">
 											<div className="col-6 mb-3">
 												<h6>Token Balance:</h6>
