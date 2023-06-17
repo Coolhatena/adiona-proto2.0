@@ -9,7 +9,7 @@ function Navigation() {
   return (
   <>
     <div className="bienvenida d-flex flex-row">
-      <div className="part1 w-50 bd-highlight">
+      <div className="part1 w-50 bd-highlight" id="regreso">
 
         <div className="nav-logo">
           <img src="AdionaOscuro.png" alt="Logo adiona" className="logo" />

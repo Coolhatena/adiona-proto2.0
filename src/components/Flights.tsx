@@ -1,70 +1,102 @@
+import { useNavigate } from "react-router-dom";
 import { MintButton } from "./mintButton";
 
 function Flights() {
+    const navigate = useNavigate();
     return (
         <div className="flight">
-            <div className="vuelo">
+            <div className="vuelo d-inline">
                 <video className="vuelo contrast-100" autoPlay muted controls>
-                    <source src="vuelo.mp4" type="video/mp4"/>
+                    <source src="vuelo.mp4" type="video/mp4" />
                 </video>
             </div>
-            <div className="container_vuelo">
-                <h1>Preparate para viajar!</h1>
-                    <a href="#data" className="btn_login sign_in m-1" type="submit">
-                          Sign in
+
+                <div className="container_vuelo d-inline">
+                    <h1>Preparate para viajar!</h1>
+                    <a href="#data" className="btn_reserva mt-2" type="submit">
+                        Get Started
                     </a>
+                </div>
+
+            <div className="form_vuelo d-inline">
+                <form className="form" id="data">
+                    <div className="title">
+                        <h1>Flights</h1>
+                    </div>
+                    <div className="form-row">
+                        <div className="form-group text-start col-md-10 mb-4">
+                            <label htmlFor="Nombre Pasajero" style={{ color: "#A88043" }}>Passanger Name</label>
+                            <input
+                                type="text"
+                                id="name_pas"
+                                className="form-control"
+                                placeholder="Pasanger Name"
+                            />
+                        </div>
+                        <div className="form-group text-start col-md-10 mb-4">
+                            <label htmlFor="fecha" style={{ color: "#A88043" }}>Derparture Date </label>
+                            <input
+                                type="datetime-local"
+                                id="date"
+                                className="form-control"
+                                placeholder="Departure Date"
+                            />
+                        </div>
+                        <div className="form-group text-start col-md-10 mb-4">
+                            <label htmlFor="fecha" style={{ color: "#A88043" }}>Return Date </label>
+                            <input
+                                type="datetime-local"
+                                id="date"
+                                className="form-control"
+                                placeholder="Return Date"
+                            />
+                        </div>
+                        <div className="form-group text-start col-md-10 mb-4">
+                            <label style={{ color: "#A88043" }}>Departure</label>
+                            <input
+                                type="text"
+                                className="form-control"
+                                id="password"
+                                placeholder="Departure"
+                            />
+                        </div>
+                    </div>
+                    <div className="form-group text-start col-md-10 mb-4">
+                        <label style={{ color: "#A88043" }}>Arrival</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            id="inputAddress"
+                            placeholder="Arrival"
+                        />
+                    </div>
+                    <div className="form-group text-start col-md-6 mb-4">
+                        <label style={{ color: "#A88043" }}>Number of passangers</label>
+                        <input
+                            type="number"
+                            min="1"
+                            max="20"
+                            className="form-control"
+                            id="inputAddress2"
+                            placeholder="1"
+                        />
+                    </div>
+                    <div className="form-row d-flex text-start col-md-6 mb-4">
+                        <div className="form-group col-md-6 mb-4">
+                            <label style={{ color: "#A88043" }}>One Way / Round Trip</label>
+                            <select className="form-control" id="tipo" name="tipo">
+                                <option value="volvo">One Way</option>
+                                <option value="saab">Round Trip</option>
+                            </select>
+                        </div>
+                        <MintButton text="Book Now!" tokens={100} styleClass="btn_reservar col-md-3 ml-40 mt-2" />
+                    </div>
+                </form>
+                <button type="button" className="btn_back position-absolute bottom-3 end-3" onClick={() => navigate("/Principal#regreso")}>
+                    Back
+                </button>
             </div>
 
-            <form id="data" className="pl-16 pr-16">
-                <h1 className="pt-4 pb-4">Reservacion de vuelo</h1>
-                <div className="form-row d-flex text-left">
-                    <div className="col m-4">
-                        <label className="pl-1">First name</label>
-                        <input type="text" className="form-control" id="validationServer01" placeholder="First name" value="Mark" required />
-                        
-                    </div>
-                    <div className="col m-4">
-                        <label className="pl-1">Last name</label>
-                        <input type="text" className="form-control" id="validationServer01" placeholder="First name" value="Mark" required />
-                    </div>
-                </div>
-                
-                <div className="form-row text-left">
-                    <div className="col m-4 w-50">
-                        <label className="pl-1">City</label>
-                        <input type="text" className="form-control is-invalid" id="validationServer03" placeholder="City" required />
-                        <div className="invalid-feedback">
-                            Please provide a valid city.
-                        </div>
-                    </div>
-                    <div className="col m-4 w-50">
-                        <label className="pl-1">State</label>
-                        <input type="text" className="form-control is-invalid" id="validationServer04" placeholder="State" required />
-                        <div className="invalid-feedback">
-                            Please provide a valid state.
-                        </div>
-                    </div>
-                    <div className="col m-4 w-50">
-                        <label className="pl-1">Zip</label>
-                        <input type="text" className="form-control is-invalid" id="validationServer05" placeholder="Zip" required />
-                        <div className="invalid-feedback">
-                            Please provide a valid zip.
-                        </div>
-                    </div>
-                </div>
-                <div className="form-group">
-                    <div className="form-check col m-4 text-left">
-                        <input className="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required />
-                        <label className="form-check-label">
-                            Agree to terms and conditions
-                        </label>
-                        <div className="invalid-feedback">
-                            You must agree before submitting.
-                        </div>
-                    </div>
-                </div>
-				<MintButton styleClass="btn_reservar" text="Book now!" tokens={100}/>
-            </form>
         </div>
     );
 }
