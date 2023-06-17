@@ -40,4 +40,4 @@ Email: adiona@gmail.com
 Password: adiona123
 
 ### Browser settings
-It is highly recommended to change to dark mode in your browser for better performance of our website 
+It is highly recommended to change to dark mode in your browser for better performance of the website 
