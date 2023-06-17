@@ -8,7 +8,9 @@ function Tours() {
       </div>
       <div className="form-row">
         <div className="form-group text-start col-md-6 mb-4">
-          <label htmlFor="Destination" style={{color: "#A88043"}}>Destination</label>
+          <label htmlFor="Destination" style={{ color: "#A88043" }}>
+            Destination
+          </label>
           <input
             type="text"
             id="name_pas"
@@ -17,7 +19,9 @@ function Tours() {
           />
         </div>
         <div className="form-group text-start col-md-6 mb-4">
-          <label htmlFor="fecha" style={{color: "#A88043"}}>Departure Date</label>
+          <label htmlFor="fecha" style={{ color: "#A88043" }}>
+            Departure Date
+          </label>
           <input
             type="datetime-local"
             id="date"
@@ -26,7 +30,7 @@ function Tours() {
           />
         </div>
         <div className="form-group text-start col-md-6 mb-4">
-          <label style={{color: "#A88043"}}>Departure</label>
+          <label style={{ color: "#A88043" }}>Departure</label>
           <input
             type="text"
             className="form-control"
@@ -35,9 +39,9 @@ function Tours() {
           />
         </div>
       </div>
-      
+
       <div className="form-group text-start col-md-6 mb-4">
-        <label style={{color: "#A88043"}}>Number of Passengers</label>
+        <label style={{ color: "#A88043" }}>Number of Passengers</label>
         <input
           type="number"
           min="1"
@@ -48,7 +52,7 @@ function Tours() {
       </div>
       <div className="form-row text-start col-md-6 mb-4">
         <div className="form-group col-md-6 mb-4">
-          <label style={{color: "#A88043"}}>Confort / Superior</label>
+          <label style={{ color: "#A88043" }}>Confort / Superior</label>
           <select className="form-control" id="tipo" name="tipo">
             <option value="volvo">Confort</option>
             <option value="saab">Superior</option>

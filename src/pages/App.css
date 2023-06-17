@@ -6,7 +6,10 @@
   text-align: center;
 }
 
-html, body, .App, #root {
+html,
+body,
+.App,
+#root {
   margin: 0;
   height: 100%;
 }
@@ -17,25 +20,17 @@ html, body, .App, #root {
 
 .Design {
   background: #c2e59c;
-  background: -webkit-linear-gradient(
-    to right,
-    #0c3547,
-    #3c98a3
-  );
-  background: linear-gradient(
-    to right,
-    #0c3547,
-    #3c98a3
-  ); 
+  background: -webkit-linear-gradient(to right, #0c3547, #3c98a3);
+  background: linear-gradient(to right, #0c3547, #3c98a3);
   width: 50%;
   display: flex;
   align-items: center;
 }
 
 .Design_user {
-  background: #c2e59c; 
-  background: -webkit-linear-gradient(to right, #0C3547, #3C98A3); 
-  background: linear-gradient(to right, #0C3547, #3C98A3); 
+  background: #c2e59c;
+  background: -webkit-linear-gradient(to right, #0c3547, #3c98a3);
+  background: linear-gradient(to right, #0c3547, #3c98a3);
   width: 100%;
   padding: 10%;
   align-items: center;
@@ -43,7 +38,7 @@ html, body, .App, #root {
 }
 
 .Design_user img {
-	display: inline;
+  display: inline;
 }
 
 .Logo {
@@ -70,18 +65,11 @@ html, body, .App, #root {
   text-decoration: none;
 }
 
-.btn_login, .btn_back {
+.btn_login,
+.btn_back {
   background: #c2e59c;
-  background: -webkit-linear-gradient(
-    to right,
-    #0c3547,
-    #3c98a3
-  ); 
-  background: linear-gradient(
-    to right,
-    #0c3547,
-    #3c98a3
-  );
+  background: -webkit-linear-gradient(to right, #0c3547, #3c98a3);
+  background: linear-gradient(to right, #0c3547, #3c98a3);
   font-size: 1.3rem;
   color: white;
   border: 0;
@@ -96,32 +84,16 @@ html, body, .App, #root {
   height: 3.5rem;
   text-align: center;
   align-self: flex-end;
-  background: -webkit-linear-gradient(
-    to right,
-    #c18c3c,
-    #ffc369
-  ); 
-  background: linear-gradient(
-    to right,
-    #c18c3c,
-    #ffc369
-  );
+  background: -webkit-linear-gradient(to right, #c18c3c, #ffc369);
+  background: linear-gradient(to right, #c18c3c, #ffc369);
 }
 
 .btn_reservar {
-  background: -webkit-linear-gradient(
-    to right,
-    #0c3547,
-    #3c98a3
-  ); 
-  background: linear-gradient(
-    to right,
-    #0c3547,
-    #3c98a3
-  );
+  background: -webkit-linear-gradient(to right, #0c3547, #3c98a3);
+  background: linear-gradient(to right, #0c3547, #3c98a3);
   font-size: 1rem;
   color: white;
-  padding:1rem;
+  padding: 1rem;
   border-radius: 8px;
   width: 18rem;
   height: 3.5rem;
@@ -190,7 +162,7 @@ html, body, .App, #root {
 }
 
 .overlay-image {
-  position:absolute;
+  position: absolute;
   background-position: center;
   background-size: contain;
   opacity: 0.6;
@@ -225,7 +197,7 @@ html, body, .App, #root {
 }
 
 .btn_back {
-	padding: 1rem 15%;
+  padding: 1rem 15%;
 }
 
 .part1 {
@@ -241,13 +213,12 @@ html, body, .App, #root {
   display: block;
 }
 
-.slogan_principal{
+.slogan_principal {
   color: white;
   margin-left: 4rem;
   margin-top: 4rem;
   text-align: left;
   align-items: center;
-  
 }
 
 .texto {
@@ -259,7 +230,7 @@ html, body, .App, #root {
 }
 
 .text {
-  color: #A88043;
+  color: #a88043;
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 1.2rem;
@@ -274,7 +245,7 @@ html, body, .App, #root {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .Recompensa {
@@ -284,8 +255,8 @@ html, body, .App, #root {
 }
 
 .menu {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
   border-radius: 10px;
   background-color: #eea63b;
   align-items: center;
@@ -302,7 +273,7 @@ html, body, .App, #root {
 }
 
 .nav_link {
-  background: #A88043;
+  background: #a88043;
   border-radius: 6px;
   font-size: 1.2rem;
   color: #ffc369;
@@ -326,13 +297,13 @@ h3 {
   display: flex;
 }
 
-.title_g{
+.title_g {
   background: linear-gradient(to right, #c18c3c, #eea63b);
   background-clip: text;
   color: transparent;
   font-size: 4rem;
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .contenedor {
@@ -340,11 +311,11 @@ h3 {
 }
 
 .dropdownButton {
-	text-align: center!important;
+  text-align: center !important;
 }
 
 h1 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.9rem;
 }
 
@@ -363,8 +334,8 @@ h1 {
   text-align: center;
   padding-top: 18rem;
   font-size: 1rem;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -376,16 +347,8 @@ h1 {
 }
 
 .btn_reserva {
-  background: -webkit-linear-gradient(
-    to right,
-    #268598,
-    #59bdc8
-  ); 
-  background: linear-gradient(
-    to right,
-    #268598,
-    #59bdc8
-  );
+  background: -webkit-linear-gradient(to right, #268598, #59bdc8);
+  background: linear-gradient(to right, #268598, #59bdc8);
   font-size: 1.3rem;
   color: white;
   border: 0;
