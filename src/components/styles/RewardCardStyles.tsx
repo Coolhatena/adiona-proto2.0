@@ -1,3 +1,5 @@
+import { isAbsolute, relative } from "path";
+
 const RewardCardStyles = {
 	div: {
 		display: "flex",
@@ -7,8 +9,8 @@ const RewardCardStyles = {
 		"text-align": "left",
 		borderRadius: "10px",
 		boxShadow: "0.5px 0.5px 10px black",
-		width: "fit-content",
-		height: "100%",
+		width: "100%",
+		height: "100%"
 	},
 
 	title: {
