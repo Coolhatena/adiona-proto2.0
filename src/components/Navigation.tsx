@@ -31,7 +31,7 @@ function Navigation() {
 					<div className="dropdown show">
                   		<a href="/#" className=" dropdown-toggle block py-2 pl-3 pr-4 light:text-black  rounded md:bg-transparent md:p-0 dark:text-white"role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Booking</a>
 						<div className="dropdown-menu dropdownContainer text-align-center" aria-labelledby="dropdownMenuLink">
-							<a href="/#" className="dropdown-item dropdownButton">Flights</a>
+							<a href="/Flights" className="dropdown-item dropdownButton">Flights</a>
 							<a href="/#" className="dropdown-item dropdownButton">Cruises</a>
 							<a href="/#" className="dropdown-item dropdownButton">Tours</a>
 							<a href="/#" className="dropdown-item dropdownButton">Car rental</a>

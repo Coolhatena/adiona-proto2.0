@@ -21,12 +21,12 @@ html, body, .App, #root {
     to right,
     #0c3547,
     #3c98a3
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  );
   background: linear-gradient(
     to right,
     #0c3547,
     #3c98a3
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
   width: 50%;
   display: flex;
   align-items: center;
@@ -76,12 +76,12 @@ html, body, .App, #root {
     to right,
     #0c3547,
     #3c98a3
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to right,
     #0c3547,
     #3c98a3
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );
   font-size: 1.3rem;
   color: white;
   border: 0;
@@ -165,7 +165,7 @@ html, body, .App, #root {
   padding: 4% 10%;
 }
 
-.title h1{
+.title h1 {
   background: linear-gradient(#0c3547, #3c98a3);
   background-clip: text;
   color: transparent;
@@ -236,7 +236,6 @@ html, body, .App, #root {
   margin-bottom: 1rem;
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-<<<<<<< HEAD
 }
 
 .Recompensa {
@@ -302,4 +301,17 @@ h3 {
 
 .dropdownButton {
 	text-align: center!important;
+}
+
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.9rem;
+}
+
+.vuelo {
+  height: 30%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  opacity: 0.6;
 }

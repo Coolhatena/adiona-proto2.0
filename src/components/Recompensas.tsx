@@ -17,6 +17,14 @@ function Recompensas() {
 						<div className="list_button">
 							<a href="/#" className="nav_link">TOTAL</a>
 						</div>
+						<div className="total">
+							<div className="datos">
+								<p>El total de tus puntos son:</p>
+							</div>
+							<div className="puntos">
+								<p>El total de tus puntos son:</p>
+							</div>
+						</div>
 					</li>
 				</ul>
 			</div>
