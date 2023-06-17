@@ -12,7 +12,7 @@ function Flights() {
             </div>
 
                 <div className="container_vuelo d-inline">
-                    <h1>Preparate para viajar!</h1>
+                    <h1>Get ready to take off!</h1>
                     <a href="#data" className="btn_reserva mt-2" type="submit">
                         Get Started
                     </a>
