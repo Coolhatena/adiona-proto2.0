@@ -9,7 +9,10 @@ function Perfil() {
 	const { api } = useApi();
 	const alert = useAlert();
 
-	const [fullState, setFullState] = useState({ totalSupply: 0 });
+	const [fullState, setFullState] = useState({ balances: [] });
+
+	const userProperty = "decodedAddress";
+	const accountDecodedAddress = account![userProperty];
 
 	// Add your programID
 	const programId =
@@ -28,7 +31,14 @@ function Perfil() {
 		})
 		.catch(({ message }: Error) => alert.error(message));
 
-	const property = "totalSupply";
+	let tokenBalance: number = 0;
+	const property = "balances";
+	const balancesArray: any[] = fullState![property];
+	balancesArray.forEach((user, index) => {
+		if (user[0] === accountDecodedAddress) {
+			[, tokenBalance] = balancesArray[index];
+		}
+	});
 
 	return (
 		<section className="w-100">
@@ -64,9 +74,7 @@ function Perfil() {
 										<div className="row pt-1">
 											<div className="col-6 mb-3">
 												<h6>Token Balance:</h6>
-												<p className="text-muted">{`${
-													fullState![property]
-												}`}</p>
+												<p className="text-muted">{`${tokenBalance}`}</p>
 											</div>
 											<div className="col-6 mb-3">
 												<h6>Platform:</h6>
