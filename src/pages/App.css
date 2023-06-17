@@ -89,6 +89,25 @@ html, body, .App, #root {
   border-radius: 8px;
 }
 
+.btn_reservar {
+  background: #c2e59c;
+  background: -webkit-linear-gradient(
+    to right,
+    #0c3547,
+    #3c98a3
+  ); 
+  background: linear-gradient(
+    to right,
+    #0c3547,
+    #3c98a3
+  );
+  font-size: 1rem;
+  color: white;
+  border: 0;
+  padding: 1% 6%;
+  border-radius: 8px;
+}
+
 .btn_create {
   background: white;
   border: 2px solid #268598;
