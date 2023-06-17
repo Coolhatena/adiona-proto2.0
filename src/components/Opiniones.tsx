@@ -1,8 +1,8 @@
 function Opiniones() {
     return(
-        <div className=" bg-white dark:bg-gray-900 d-inline-block">
+        <div className="dark:bg-gray-900 d-inline-block">
             <h2 className="testimonials">Testimonials</h2>
-            <p className="mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
+            <p className="mb-8 text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
       
             <div className="grid mb-8 lg:mb-12 lg:grid-cols-2">
                 <figure className="p-4 max-w-screen-md mx-auto">
@@ -10,7 +10,7 @@ function Opiniones() {
                         <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
                     </svg> 
                     <blockquote>
-                        <p className="pl-6 pr-6 text-xl font-medium text-gray-900 dark:text-white">Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.</p>
+                        <p className="pl-6 pr-6 text-xl text-justif font-medium text-gray-900">&#34;Adiona Travel Agency provided a stress-free and personalized vacation experience. Their attentive team crafted a perfect itinerary and arranged top-notch accommodations and activities. Highly recommended!&#34;</p>
                     </blockquote>
                     <figcaption className="flex items-center justify-center mt-2 space-x-3">
                         <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
@@ -25,7 +25,7 @@ function Opiniones() {
                         <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
                     </svg> 
                     <blockquote>
-                        <p className="pl-6 pr-6 text-xl font-medium text-gray-900 dark:text-white">Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.</p>
+                        <p className="pl-6 pr-6 text-xl font-medium text-gray-900 dark:text-white">&#34;Adiona Travel Agency&lsquo;s expertise and attention to detail are unmatched. They exceeded my expectations with a seamless multi-country tour. My go-to agency for future travels.&#34;</p>
                     </blockquote>
                     <figcaption className="flex items-center justify-center mt-2 space-x-3">
                         <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
